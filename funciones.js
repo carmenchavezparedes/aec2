@@ -75,7 +75,7 @@ btnExamenes.addEventListener("click", function(e) {
     const diasRestantes = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
 
     if (diasRestantes > 0) {
-        mensaje.innerText = "📅 Próximo examen: 15/06/2025 — Faltan " + diasRestantes + " días";
+        mensaje.innerText = "📅 Próximo examen: 15/06/2026 — Faltan " + diasRestantes + " días";
     } else {
         mensaje.innerText = "📅 No hay exámenes próximos programados";
     }
@@ -131,7 +131,7 @@ btnInfo.addEventListener("click", function(e) {
     const nombreAlumno = prompt("¿Cuál es tu nombre?");
 
     if (nombreAlumno !== null && nombreAlumno.trim() !== "") {
-        mensaje.innerText = "👤 Alumno: " + nombreAlumno + " | Curso: 2024-2025 | UDIMA";
+        mensaje.innerText = "👤 Alumno: " + nombreAlumno + " | Curso: 2025-2026 | UDIMA";
         pie.innerText = "Hola, " + nombreAlumno + "!";
         console.log("Info Alumno consultada por: " + nombreAlumno);
     } else {
