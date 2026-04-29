@@ -68,7 +68,7 @@ btnExamenes.addEventListener("click", function(e) {
 
     // Uso el objeto Date para obtener la fecha actual y calcular
     // cuántos días faltan para el próximo examen
-    const fechaExamen = new Date("2025-06-15");
+    const fechaExamen = new Date("2026-06-15");
     const hoy = new Date();
     const diferencia = fechaExamen - hoy;
     const diasRestantes = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
