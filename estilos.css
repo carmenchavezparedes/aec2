@@ -1,0 +1,159 @@
+/* ===== RESET Y BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY CON IMAGEN DE FONDO ===== */
+body {
+    font-family: 'Arial Black', Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('Fondo01.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay oscuro sobre la imagen para mayor contraste */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #2ecc40;
+    border-radius: 4px;
+    padding: 0;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== TÍTULO APLICACIÓN ===== */
+.titulo {
+    background-color: transparent;
+    color: #cc0000;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 18px 10px;
+    border-bottom: 2px solid #2ecc40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.titulo::before {
+    content: "🔴";
+    font-size: 1rem;
+}
+
+/* ===== MENSAJE INFORMATIVO ===== */
+/* Este div muestra información cuando el usuario pulsa un botón */
+.mensaje {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+    padding: 8px 15px;
+    min-height: 30px;
+    background-color: rgba(46, 204, 64, 0.15);
+    border-bottom: 1px solid #2ecc40;
+    transition: all 0.3s ease;
+}
+
+/* Solo se ve cuando tiene contenido */
+.mensaje:empty {
+    display: none;
+}
+
+/* ===== LISTA DE BOTONES ===== */
+.menu {
+    list-style: none;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===== BOTONES ===== */
+.menu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+/* Efecto hover */
+.menu li a:hover {
+    filter: brightness(1.2);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* Calificaciones */
+.btn-calificaciones {
+    background-color: #cc0000;
+    color: #ffffff;
+    border: 1px solid #aa0000;
+}
+
+/* Exámenes */
+.btn-examenes {
+    background-color: #cc0000;
+    color: #ffffff;
+    border: 1px solid #aa0000;
+}
+
+/* Tutoría */
+.btn-tutoria {
+    background-color: #cc0000;
+    color: #ffffff;
+    border: 1px solid #aa0000;
+}
+
+/* Info Alumno - color diferenciado para que destaque */
+.btn-info {
+    background-color: #ff1a1a;
+    color: #ffffff;
+    border: 2px solid #ff4444;
+}
+
+/* Clase para resaltar el botón activo que se acaba de pulsar */
+.btn-activo {
+    background-color: #2ecc40 !important;
+    border-color: #27ae60 !important;
+    color: #000000 !important;
+}
+
+/* ===== PIE DEL CONTENEDOR ===== */
+.pie {
+    color: #aaaaaa;
+    font-size: 0.75rem;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-top: 1px solid #2ecc40;
+}
