@@ -1,5 +1,4 @@
 // AEC2 - Funcionalidades de los botones mediante JavaScript
-// Asignatura: Aplicaciones Web y Aplicaciones Empresariales
 // Autora: Carmen Chavez Paredes
 
 // Selecciono los elementos del DOM que voy a necesitar
